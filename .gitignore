@@ -1,0 +1,13 @@
+node_modules
+dist
+.turbo
+.env
+*.log
+coverage
+.keys
+uploads
+secrets
+*.tsbuildinfo
+
+# OCR language data downloaded by tesseract.js when run in Node (tests/debugging)
+*.traineddata

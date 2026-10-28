@@ -1,0 +1,15 @@
+{
+  "name": "delivez-customer-app",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "dev": "turbo run dev --filter=@delivez/local-web",
+    "build": "turbo run build --filter=@delivez/local-web",
+    "typecheck": "turbo run typecheck --filter=@delivez/local-web",
+    "i18n:check": "node packages/i18n/check.js"
+  }
+}
