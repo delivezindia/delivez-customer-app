@@ -19,7 +19,7 @@ chmod +x deploy/customer/update.sh deploy/customer/hooks/*
 git config core.hooksPath deploy/customer/hooks   # every future git pull rebuilds automatically
 ./deploy/customer/update.sh                       # first build
 ```
-Then nginx: copy `deploy/customer/nginx.conf` to `/etc/nginx/sites-available/`, set the domain and path, enable it, reload nginx, and add HTTPS with `sudo certbot --nginx -d local.delivez.com`.
+Then nginx: copy `deploy/customer/nginx.conf` to `/etc/nginx/sites-available/`, set the domain and path, enable it, reload nginx, and add HTTPS with `sudo certbot --nginx -d now.delivez.com`.
 
 On the backend, `CORS_ORIGINS` must include this app's address. Online payment needs the Razorpay keys in the backend's `.env`.
 
